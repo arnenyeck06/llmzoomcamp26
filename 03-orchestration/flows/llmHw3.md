@@ -85,16 +85,16 @@ Kestra 1.1 introduced several exciting features and improvements. Here are 5 maj
 3. **Namespace-Level Defaults:** This feature allowed users to define default configurations at the namespace level. Instead of repeating the same configuration (e.g., Docker image, specific environment variables, retry policies) for every flow within a namespace, they could now set these defaults once. Any flow in that namespace would inherit these settings unless explicitly overridden. This significantly reduced boilerplate code and improved maintainability for larger projects.
 4. **Flow Bundles & Blueprints:** Kestra 1.1 introduced the concept of "Flow Bundles" (later often referred to as Blueprints). This allowed users to package and share reusable collections of flows, often accompanied by necessary configurations and documentation. This was a big step towards promoting best practices, accelerating development, and enabling easier sharing of common patterns and solutions across teams or organizations.
 5. **Enhanced UI for Debugging & Monitoring:** The Kestra UI received several improvements aimed at making debugging and monitoring of flows more intuitive and powerful. This included better visualizations of flow runs, easier access to logs, and more detailed information about task executions. These UI enhancements were crucial for operators and developers to quickly understand the state of their workflows, identify issues, and troubleshoot effectively.
-ü§î Did you notice that this response seems to be:
+ Did you notice that this response seems to be:
 - Incorrect?
 - Vague/generic?
 - Listing features that haven't been added in exactly this version but rather a long time ago?
-üëâ This is why context matters! Run `2_chat_with_rag.yaml` to see the accurate, context-grounded response.
+üëâ This is why context matters! Run `2_chat_with_rag.yaml` to see the accurate, context-grounded response.
 ```
 
 RAG response:
 ```
-‚úÖ RAG Response (with retrieved context):
+ RAG Response (with retrieved context):
 Kestra 1.1 introduced several major features. Here are at least 5 of them with brief descriptions:
 1. **New Filters**: The UI filters across Kestra were completely redesigned based on user feedback to be more intuitive and powerful. Users can now choose from explicit filter options, reset filters with a single click, save frequently used filter combinations, and customize table columns.
 2. **No-Code Dashboard Editor**: Kestra 1.1 extended the No-Code Multi-Panel Editor to custom dashboards, allowing users to build and customize dashboards directly from the UI without writing YAML. Users can create data sources, visualizations, and charts using form-based tabs.
@@ -102,7 +102,7 @@ Kestra 1.1 introduced several major features. Here are at least 5 of them with b
 4. **Fix with AI**: This feature provides AI-powered suggestions when task runs fail, helping users quickly diagnose and resolve issues with intelligent recommendations for fixing problems.
 5. **Human Task**: For Enterprise Edition users, the new `HumanTask` allows for manual approval steps in workflows. Executions pause at a human task until designated users or group members approve and resume them, enabling human-in-the-loop workflows.
 6. **Dozens of New Plugins**: Kestra 1.1 included numerous new plugins contributed by the community, expanding integration capabilities across various categories such as Data & Database (e.g., Liquibase, dlt), SaaS & API (e.g., Airtable, Stripe, Shopify), Cloud & Infrastructure (e.g., Dataform, AWS CloudWatch), and AI Model Providers (e.g., Oracle Cloud Infrastructure GenAI, Cloudflare Workers AI).
-üéâ Note that this response is detailed, accurate, and grounded in the actual release documentation. Compare this with the output from 1_chat_without_rag.yaml!
+ Note that this response is detailed, accurate, and grounded in the actual release documentation. Compare this with the output from 1_chat_without_rag.yaml!
 ```
 
 **Answer:** The non-RAG response about Kestra 1.1 features is best described as Accurate and specific, matching the actual release notes
@@ -119,10 +119,7 @@ What is the approximate **output** token count for `multilingual_agent`?
 
 `log_token_usage` task:
 ```
-Multilingual Agent:
-- Input tokens: 282
-- Output tokens: 76
-- Total tokens: 358
+64 output tokens
 ```
 
 **Answer:** The approximate output token count for multilingual_agent is 60-100 tokens
@@ -137,10 +134,7 @@ Compare the `multilingual_agent` output token count to your result from Question
 
 `log_token_usage` task:
 ```
-Multilingual Agent:
-- Input tokens: 282
-- Output tokens: 195
-- Total tokens: 477
+195 output tokens
 ```
 
 **Answer:** The long summary uses 2-5x more
@@ -157,10 +151,16 @@ Compare the `english_brevity` output token count to the original 1-sentence vers
 
 `log_token_usage` task:
 ```
-Multilingual Agent:
-- Input tokens: 282
-- Output tokens: 169
-- Total tokens: 451
+English Brevity Agent: 1 sentence
+- Input tokens: 210
+- Output tokens: 50
+- Total tokens: 260
+
+English Brevity Agent: 3sentences
+- Input tokens: 191
+- Output tokens: 84
+- Total tokens: 275
+
 ```
 
 **Answer:** The output token count to the original 1-sentence version with summary_length = long is 2-4x more.
