@@ -76,9 +76,9 @@ tasks:
 Run both `1_chat_without_rag.yaml` and `2_chat_with_rag.yaml` in the Kestra UI. Read the execution logs for each.
 
 
-non-RAG response:
+NO-RAG response:
 ```
-Response WITHOUT RAG (no retrieved context):
+ WITHOUT RAG (no retrieved context):
 Kestra 1.1 introduced several exciting features and improvements. Here are 5 major ones:
 1. **Event-Driven Flows (Triggers):** This was a significant addition, allowing Kestra workflows to be automatically initiated by external events. Instead of relying solely on scheduled executions or manual starts, users could now define "triggers" that would kick off a flow based on an event occurring in a connected system (e.g., a file appearing in S3, a message in Kafka, a change in a database). This moved Kestra further into being a true event-driven orchestration platform.
 2. **Plugin System Improvements (including Python plugins for Workers):** Kestra 1.1 brought notable enhancements to its plugin system, particularly improving the flexibility and power of Python plugins. While Python plugins existed before, this release made it easier to create and manage custom Python tasks, and crucially, allowed Python tasks to run directly on Kestra workers (previously, some Python tasks might have required a Docker container or more complex setup). This streamlined the development of custom Python logic within workflows.
@@ -94,7 +94,7 @@ Kestra 1.1 introduced several exciting features and improvements. Here are 5 maj
 
 RAG response:
 ```
-RAG Response (with retrieved context):
+ WITH RAG (with retrieved context):
 Kestra 1.1 introduced several major features. Here are at least 5 of them with brief descriptions:
 1. **New Filters**: The UI filters across Kestra were completely redesigned based on user feedback to be more intuitive and powerful. Users can now choose from explicit filter options, reset filters with a single click, save frequently used filter combinations, and customize table columns.
 2. **No-Code Dashboard Editor**: Kestra 1.1 extended the No-Code Multi-Panel Editor to custom dashboards, allowing users to build and customize dashboards directly from the UI without writing YAML. Users can create data sources, visualizations, and charts using form-based tabs.
