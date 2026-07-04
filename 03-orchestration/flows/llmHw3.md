@@ -51,7 +51,7 @@ namespace: dev.kestra.bigquery
 tasks:
   - id: download_taxi_data
     type: io.kestra.plugin.core.http.Download
-    uri: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-01.csv
+    uri: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-01.csv
     saveAs: yellow_tripdata_2023-01.csv
 
   - id: load_to_bigquery
