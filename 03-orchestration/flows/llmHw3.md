@@ -109,7 +109,7 @@ Kestra 1.1 introduced several major features. Here are at least 5 of them with b
 
 ---
 
-## Question 3: Token usage ‚Äî short summary
+## Question 3: Token usage: "short"
 
 Run `4_simple_agent.yaml` with `summary_length = short` (leave the other inputs as defaults).
 
@@ -126,7 +126,7 @@ What is the approximate **output** token count for `multilingual_agent`?
 
 ---
 
-## Question 4: Token usage ‚Äî long summary
+## Question 4: Token usage: "long"
 
 Run `4_simple_agent.yaml` again with `summary_length = long`.
 
@@ -171,5 +171,5 @@ English Brevity Agent: 3sentences
 
 Based on what you learned in this module, for production workflows requiring deterministic, repeatable results with strict compliance requirements (e.g., financial reporting, workflows in highly regulated industries), which approach is most appropriate?
 
-**Answer:** The Use of traditional task-based workflows for predictability and auditability  is the most appropriate approach
+**Answer:** The Use of traditional task-based workflows for predictability and auditability  is the most appropriate approach.
 
