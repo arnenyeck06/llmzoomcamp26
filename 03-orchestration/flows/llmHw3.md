@@ -43,7 +43,7 @@ tasks:
     serviceAccount: "{{ secret('GCP_SERVICE_ACCOUNT') }}"
 ```
 
-AI Copilot:
+Kestra AI:
 ```
 id: nyc_taxi_data_load
 namespace: dev.kestra.bigquery
