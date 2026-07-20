@@ -166,7 +166,7 @@ Count the spans in the console output - each one is a separate
 
 
 *** Answer: 3***
-
+```
 {
     "name": "search",
     "context": {
@@ -261,6 +261,8 @@ Each iteration:
 4. If there are no function calls, break out of the loop.
 
 So the stop condition is: **no function calls in the model’s response**.
+```
+
 ---
 
 
@@ -286,6 +288,7 @@ the cost using the code from the previous modules.
 Now re-run the query. How many input tokens do we see?
 
 *** Answer: 7000 ***
+```
 {
     "name": "search",
     "context": {
@@ -385,6 +388,8 @@ So the stop condition is:
 **no function calls this turn → done**
 
 If you want, I can also show the exact code flow step by step.
+```
+
 ---
 
 ## Q3. Span timing
@@ -479,7 +484,7 @@ Re-run the query from Q1. Which span names appear in the `spans` table?
 
 *** Answer: `rag`, `search`, and `llm` ***
 
----
+```
      name           start_time             end_time  input_tokens  \
 0  search  1784510191714595000  1784510191715280000           NaN   
 1     llm  1784510191716165000  1784510193765117000           NaN   
@@ -495,6 +500,8 @@ Re-run the query from Q1. Which span names appear in the `spans` table?
 3            NaN       NaN  
 4          108.0  0.001131  
 5            NaN       NaN  
+
+```
 
 ---
 
@@ -515,10 +522,13 @@ excluding `rag`. Which span type takes the most total time?
 * They're all about the same
 
 *** Answer: llm ***
+```
 name
 llm       3870173000
 search       3485000
 Name: duration, dtype: int64
+```
+
 ---
 
 ## Q6. Token stability across runs
@@ -536,9 +546,13 @@ span.
 How much do the input tokens vary across these 4 runs?
 
 *** Answer: They're identical***
+
+```
 [7111. 7111. 7111. 7111.]
 Min: 7111.0, Max: 7111.0
 Variation: 0.0%
+```
+
 ---
 
 ## Going further
