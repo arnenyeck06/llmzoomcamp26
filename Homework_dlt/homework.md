@@ -150,9 +150,9 @@ SELECT COUNT(*) FROM information_schema.tables
 WHERE table_schema = 'agent_traces';
 ```
 
-* 1
-* 3
 *** Answer: 24 ***
+
+```
 
 ## Question 3. Query traces with an agent
 
@@ -164,9 +164,10 @@ The token counts are stored in the span attributes as
 trace. The number depends on how many searches the agent made, so
 report the range it falls into:
 
-
+```
 *** Answer: 1500 - 5000 ***
 
+```
 
 ## Submit the results
 
