@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  elasticsearch:
+    image: elasticsearch:8.17.6
+    container_name: elasticsearch
+    ports:
+      - "9200:9200"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+
+volumes:
+  elasticsearch_data:
